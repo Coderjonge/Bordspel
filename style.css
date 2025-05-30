@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: white;
+    display: flex;
+    align-items: flex-start;
+}
+
+#connect {
+    width: 12.5vw;
+    height: 6.25vw;
+}
+
+#canvas {
+    display: block;
+    width: 75vw;
+    height: 56.25vw;
+    font-size: 3vw;
+}
+
+#dobbeldiv {
+    position: absolute;
+    left: 75vw;
+    top: calc(56.25vw / 2);
+    width: 25vw;
+    height: calc(56.25vw / 2);
+    background-color: rgb(79, 79, 79);
+}
+
+#gooi {
+    width: 12.5vw;
+    left: calc(75vw + 6.25vw);
+    position: absolute;
+    top: calc((56.25vw / 2 + (56.25vw / 4)) - 6.25vw);
+    height: 12.5vw;
+    font-size: 3vw;
+    background-color: rgb(191, 191, 191);
+    border: 0.3vw, solid, black;
+}
