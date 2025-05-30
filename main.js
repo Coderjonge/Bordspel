@@ -24,7 +24,7 @@ var server;
 function connect()
 {
     document.getElementById("connect").remove()
-    server = new WebSocket("ws://85.148.53.54:8080");
+    server = new WebSocket("wws://85.148.53.54:8080");
     server.onerror = () => {location.reload();}
     server.onmessage = async (event) => {
         var tekst = event.data
